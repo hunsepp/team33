@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <%- include('partials/head') %>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">쩐당포</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/d">로그인</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+    </head>
+    <body>
+        <div class="upload-section">
+            <div class="header">            
+                <h1>물품등록</h1>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default">
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="true">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            삼성<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" >
+                            <li class="">
+                                <a id="s20" href="#" >S20</a>
+                            </li>
+                            <li class="">
+                                <a id="s10"href="#/">S10</a>
+                            </li>
+                            <li class="">
+                                <a id="s9"href="#">S9</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            LG<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a id="g40"href="#">G40</a>
+                            </li>
+                            <li class="">
+                                <a id="g50" href="#">G50</a>
+                            </li>
+                            <li class="">
+                                <a id="g60" href="#">G60</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Apple<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a id="i11" href="#">iPhone 11</a>
+                            </li>
+                            <li class="">
+                                <a id="i10" href="#/">iPhone 10</a>
+                            </li>
+                            <li class="">
+                                <a id="i9" href="#">iPhone 9</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+            <button class="btn btn-primary" onclick="button1_click();" >제품 등록</button>
+       </nav>
+    </body>
+
+</html>
+
+<script>
+    $("#s20").click(()=>{
+        alert("현재 시세는 2.5eth 입니다.");
+    })
+    $("#s10").click(()=>{
+        alert("현재 시세는 1.99eth 입니다.");
+    })
+    $("#s9").click(()=>{
+        alert("현재 시세는 0.6eth 입니다.");
+    })
+    $("#i9").click(()=>{
+        alert("현재 시세는 0.6eth 입니다.");
+    })
+    $("#i10").click(()=>{
+        alert("현재 시세는 1.99eth 입니다.");
+    })
+    $("#i11").click(()=>{
+        alert("현재 시세는 2.5eth 입니다.");
+    })
+    $("#g40").click(()=>{
+        alert("현재 시세는 0.6eth 입니다.");
+    })
+    $("#g50").click(()=>{
+        alert("현재 시세는 1.99eth 입니다.");
+    })
+    $("#g60").click(()=>{
+        alert("현재 시세는 2.5eth 입니다.");
+    })
+    function button1_click(){
+        alert("등록 완료!")
+    }
+</script>
